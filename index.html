@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/18bd348c67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                   
+                <ul id="sidemenu" >
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AIML Engineer</p>
+                <h1>Hello I am <span> Avanthika Suresh</span><br>a 4th year BE-AIML student</h1>
+            </div>
+        </div>
+    </div>  
+<!-----------------about----------------------->
+<div id="about">
+    <div class="contatiner">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMAGES/user.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">ABOUT ME</h1>
+                <p>I’m Avanthika Suresh, a final-year AIML engineering student at Sathyabama University, Chennai, with a strong interest in AI, machine learning, and data analysis. Skilled in coding & problem-solving. I enjoy exploring real-world applications of AI while continuously learning to grow as a versatile professional in AI, data science, and software development.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li> <span>Programming & Development</span><br>Python, C, C++, Front-end and Back-end Development</li>
+                        <li> <span>Machine Learning & AI</span><br>Machine Learning Algorithms, Deep Learning (CNN, LSTM, CRNN), Natural Language Processing (NLP), Computer Vision (Face Detection, Emotion Recognition)</li>
+                        <li> <span>Frameworks & Libraries</span><br>TensorFlow, Keras, PyTorch, OpenCV, NumPy, Pandas, Scikit-learn, MediaPipe (for gesture recognition)</li>
+                        <li> <span>Soft Skills</span><br>Leadership, Communication, Time Management, Problem Solving & Critical Thinking, Teamwork & Organizational Skills</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li> <span>GoWatr Pvt Ltd, Chennai (Jun 2023 – Aug 2023)</span><br>Front-End & Back-End Intern<br>Contributed to front-end and back-end development tasks and was involved in data processing and data analytics, strengthening practical development skills.  </li>
+                        <li> <span>Corizo (Remote, Oct 2023 – Nov 2023)</span><br>Machine Learning Intern<br> Worked on machine learning algorithms for stock market prediction and wine quality prediction and also gained hands-on experience in applying ML models to real-world datasets.</li>
+                        <li> <span>Edunet((Remote, Sept 2025 – Oct 2025)) </span><br>Front-End Intern<br>Gained hands-on experience in Front-End Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li> <span>10th std(2020)</span><br>St Johns English School and Junior College<br>Percentage Scored: 96.8%</li>
+                        <li> <span>12th std(2022)</span><br>St Johns English School and Junior College<br>Percentage Scored: 90.1%</li>
+                        <li> <span>BE engineering(2026)</span><br>Sathyabama Institute of Science and Technology<br>Current Cgpa(6th sem): 9.31</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!-----------------portfolio---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY WORK</h1>
+        <div class="work-List">
+            <div class="work">
+                <img src="IMAGES/work-1.png" >
+                <div class="layer">
+                    <h3>Music Recommendation System (CRNN)</h3>
+                    <p>Components: CNN, LSTM, CRNN, FER-2023 dataset<br>
+                        Working: Detects facial emotions and recommends music accordingly.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="IMAGES/work-2.png" >
+                <div class="layer">
+                    <h3>Gestovox Interface</h3>
+                    <p>Components: MediaPipe, Computer Vision, Speech Recognition<br>Working: Controls computer functions and games using gestures and voice.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="IMAGES/work-3.png" >
+                <div class="layer">
+                    <h3>Secure Loom (Ongoing)</h3>
+                    <p>Components: GPS, Audio & Video Analysis, Real-Time Alerts<br>Working: Tracks location, detects threats, and alerts emergency contacts. </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="IMAGES/work-4.png" >
+                <div class="layer">
+                    <h3>PackSavy IoT Smart Bag(ongoing)</h3>
+                    <p>Components: ESP32, RFID (RC522), IoT Integration<br>Working: Manages and secures items in a smart bag with real-time tracking.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class ="btn">See More</a>
+    </div>
+</div>
+<!----------CONTACT----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>avanthikasureshk@gmail.com</p>
+                <p><i class="fa-brands fa-whatsapp"></i>6379757434</p>
+                <div class="social-icons">
+                    <a href="https://github.com/avanthikask"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="www.linkedin.com/in/avanthika-suresh-74a132247"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href="IMAGES/my-cv.pdf" download class="btn btn2" >Download CV</a>
+            </div>
+            
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="NAME" placeholder="Your Name" required>
+                    <input type="email" name="EMAIL" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Made By Avanthika Suresh! </p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyLa_Np9r1LLWyZ7dVVIuTjc-_4mVEVdKy4bXR0XsFzx8llfoVuTBQc1l0PP93k9KyD/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Succesfully"
+        setTimeout(function(){
+            msg.innerHTML
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
